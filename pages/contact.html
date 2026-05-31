@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IronCore — Επικοινωνία</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 3rem;
+      margin-top: 2rem;
+    }
+    .contact-info h3 { font-size: 1.3rem; margin-bottom: 1rem; }
+    .contact-item {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      align-items: flex-start;
+    }
+    .contact-item-icon { font-size: 1.5rem; min-width: 2rem; }
+    .form-success {
+      display: none;
+      background-color: rgba(76,175,80,0.1);
+      border: 1px solid rgba(76,175,80,0.4);
+      color: #4caf50;
+      padding: 1rem 1.5rem;
+      margin-top: 1rem;
+    }
+    @media (max-width: 768px) {
+      .contact-layout { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .contact-layout { grid-template-columns: 1fr; gap: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">IRON<span>CORE</span></a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Αρχική</a></li>
+          <li><a href="workouts.html">Προπονήσεις</a></li>
+          <li><a href="nutrition.html">Διατροφή</a></li>
+          <li><a href="exercises.html">Ασκήσεις</a></li>
+          <li><a href="progress.html">Πρόοδος</a></li>
+          <li><a href="contact.html" class="active">Επικοινωνία</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>ΕΠΙΚΟΙΝΩΝΗΣΤΕ <span>ΜΑΖΙ ΜΑΣ</span></h1>
+      <p>Έχεις ερώτηση για προπόνηση, διατροφή ή τον ιστότοπο; Στείλε μας μήνυμα.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <img
+        src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1000&auto=format&fit=crop"
+        alt="Αλτήρες παρατεταγμένοι σε γυμναστήριο"
+        class="page-img"
+      >
+      <p class="img-credit">Φωτογραφία από Danielle Cerullo στο Unsplash — Ελεύθερη χρήση (Unsplash License)</p>
+
+      <div class="contact-layout">
+
+        <!-- ΠΛΗΡΟΦΟΡΙΕΣ ΕΠΙΚΟΙΝΩΝΙΑΣ -->
+        <div class="contact-info">
+          <h2>Στοιχεία Επικοινωνίας</h2>
+          <p>Είτε έχεις ερώτηση για τα προγράμματα, πρόταση για τον ιστότοπο ή θέλεις απλώς να μοιραστείς την πρόοδό σου — χαρούμε να σε ακούσουμε.</p>
+
+          <div class="contact-item">
+            <span class="contact-item-icon">📧</span>
+            <div>
+              <h3>Email</h3>
+              <p style="margin:0;">info@ironcore-gym.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-item-icon">📍</span>
+            <div>
+              <h3>Τοποθεσία</h3>
+              <p style="margin:0;">Αθήνα, Ελλάδα</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-item-icon">⏰</span>
+            <div>
+              <h3>Χρόνος Απάντησης</h3>
+              <p style="margin:0;">Στοχεύουμε να απαντάμε εντός 24–48 ωρών τις εργάσιμες ημέρες.</p>
+            </div>
+          </div>
+
+          <hr class="divider">
+
+          <h3>Ακολούθησε το IronCore</h3>
+          <p>
+            <span class="tag">📸 Instagram</span>
+            <span class="tag">▶️ YouTube</span>
+            <span class="tag">🐦 Twitter/X</span>
+          </p>
+        </div>
+
+        <!-- ΦΟΡΜΑ ΕΠΙΚΟΙΝΩΝΙΑΣ (Απαίτηση) -->
+        <div class="contact-form-wrap">
+          <h2>Στείλε Μήνυμα</h2>
+
+          <form action="#" method="post">
+
+          <div class="form-group form-row">
+            <div>
+              <label for="fname">Όνομα</label>
+              <input type="text" id="fname" name="fname" placeholder="Γιάννης" required>
+            </div>
+            <div>
+              <label for="lname">Επώνυμο</label>
+              <input type="text" id="lname" name="lname" placeholder="Παπαδόπουλος" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Διεύθυνση Email</label>
+            <input type="email" id="email" name="email" placeholder="giannis@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Τηλέφωνο (Προαιρετικό)</label>
+            <input type="tel" id="phone" name="phone" placeholder="+30 6900 000000">
+          </div>
+
+          <div class="form-group">
+            <label for="topic">Θέμα</label>
+            <select id="topic" name="topic">
+              <option value="">— Επέλεξε θέμα —</option>
+              <option value="workouts">Προγράμματα Προπόνησης</option>
+              <option value="nutrition">Ερωτήσεις Διατροφής</option>
+              <option value="exercises">Τεχνική Ασκήσεων</option>
+              <option value="progress">Παρακολούθηση Προόδου</option>
+              <option value="feedback">Σχόλια για τον Ιστότοπο</option>
+              <option value="other">Άλλο</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="experience">Επίπεδο Εμπειρίας</label>
+            <select id="experience" name="experience">
+              <option value="">— Επέλεξε επίπεδο —</option>
+              <option value="beginner">Αρχάριος (0–1 χρόνο)</option>
+              <option value="intermediate">Ενδιάμεσος (1–3 χρόνια)</option>
+              <option value="advanced">Προχωρημένος (3+ χρόνια)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Το Μήνυμά σου</label>
+            <textarea id="message" name="message" placeholder="Γράψε την ερώτηση ή το μήνυμά σου εδώ..." required></textarea>
+          </div>
+
+          <div class="form-group" style="display:flex; align-items:center; gap:0.8rem;">
+            <input type="checkbox" id="newsletter" name="newsletter" style="width:auto; accent-color:#e8c547;">
+            <label for="newsletter" style="text-transform:none; letter-spacing:0; font-size:0.9rem; color:#cccccc; margin:0;">Εγγραφή στο newsletter του IronCore για tips προπόνησης και νέα</label>
+          </div>
+
+          <button
+            type="button"
+            class="btn btn-primary"
+            onclick="document.getElementById('form-success').style.display='block'; this.disabled=true; this.textContent='Εστάλη ✓';"
+            style="width:100%; font-size:1.2rem; padding:1rem;"
+          >
+            Αποστολή Μηνύματος
+          </button>
+
+          <div id="form-success" class="form-success">
+            ✅ Ευχαριστούμε! Το μήνυμά σου παραλήφθηκε. Θα επικοινωνήσουμε σύντομα.
+          </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 IronCore — CN4003 Web Technologies | Φοιτητική Εργασία</p>
+      <p style="margin-top:0.4rem;">Φωτογραφίες από <a href="https://unsplash.com" target="_blank">Unsplash</a> (ελεύθερη χρήση)</p>
+    </div>
+  </footer>
+
+</body>
+</html>

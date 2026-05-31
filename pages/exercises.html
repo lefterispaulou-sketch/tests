@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IronCore — Βιβλιοθήκη Ασκήσεων</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    .exercise-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .exercise-card {
+      background-color: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .exercise-card:hover { transform: translateY(-4px); }
+    .exercise-card-header {
+      background: linear-gradient(135deg, #1a1500, #2a2000);
+      padding: 1.2rem 1.5rem;
+      border-bottom: 2px solid #e8c547;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .exercise-card-header h3 { margin: 0; font-size: 1.3rem; }
+    .exercise-card-body { padding: 1.2rem 1.5rem; }
+    .muscles-badge {
+      background-color: rgba(232,197,71,0.1);
+      border: 1px solid rgba(232,197,71,0.3);
+      color: #e8c547;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    .diff-badge { font-size: 0.7rem; padding: 0.2rem 0.6rem; font-weight: 700; letter-spacing: 1px; }
+    .diff-easy { background-color: rgba(76,175,80,0.2); color: #4caf50; }
+    .diff-medium { background-color: rgba(232,197,71,0.2); color: #e8c547; }
+    .diff-hard { background-color: rgba(232,71,71,0.2); color: #e84747; }
+    .tips-list { list-style: disc; padding-left: 1.2rem; margin-top: 0.5rem; }
+    .tips-list li { font-size: 0.88rem; margin-bottom: 0.3rem; }
+    .muscle-section { margin-bottom: 3rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">IRON<span>CORE</span></a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Αρχική</a></li>
+          <li><a href="workouts.html">Προπονήσεις</a></li>
+          <li><a href="nutrition.html">Διατροφή</a></li>
+          <li><a href="exercises.html" class="active">Ασκήσεις</a></li>
+          <li><a href="progress.html">Πρόοδος</a></li>
+          <li><a href="contact.html">Επικοινωνία</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>ΒΙΒΛΙΟΘΗΚΗ <span>ΑΣΚΗΣΕΩΝ</span></h1>
+      <p>Κατακτά τις πιο αποτελεσματικές σύνθετες και απομονωτικές ασκήσεις με οδηγίες τεχνικής και coaching tips.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <img
+        src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=1000&auto=format&fit=crop"
+        alt="Άτομο που κάνει pull-ups στο γυμναστήριο"
+        class="page-img"
+      >
+      <p class="img-credit">Φωτογραφία από Sven Mieke στο Unsplash — Ελεύθερη χρήση (Unsplash License)</p>
+
+      <p style="margin-top:2rem;">Οι παρακάτω ασκήσεις αποτελούν τον κορμό κάθε αποτελεσματικού προγράμματος άρσης βαρών. Επικεντρώσου στην εκμάθηση της σωστής τεχνικής πριν προσθέσεις βάρος — η καλή φόρμα σε προστατεύει από τραυματισμούς και εξασφαλίζει ότι οι σωστοί μύες κάνουν τη δουλειά.</p>
+
+      <!-- ΣΤΗΘΟΣ -->
+      <div class="muscle-section">
+        <h2>Στήθος</h2>
+        <div class="exercise-grid">
+          <div class="exercise-card">
+            <div class="exercise-card-header">
+              <h3>Bench Press με Μπάρα</h3>
+              <span class="diff-badge diff-medium">ΕΝΔΙΑΜΕΣΟΣ</span>
+            </div>
+            <div class="exercise-card-body">
+              <p><span class="muscles-badge">Μεγάλος Θωρακικός · Τρικέφαλοι · Πρόσθιος Δελτοειδής</span></p>
+              <p>Η βασιλική άσκηση για το στήθος. Ξάπλωσε σε οριζόντιο παγκάκι, πιάσε τη μπάρα λίγο πιο φαρδιά από το πλάτος των ώμων και κατέβασέ την στο κατώτερο τμήμα του στήθους.</p>
+              <ul class="tips-list">
+                <li>Μάζεψε και κατέβασε τις ωμοπλάτες σε όλη τη διάρκεια</li>
+                <li>Κράτα τα πόδια επίπεδα στο πάτωμα</li>
+                <li>Διατήρησε φυσική καμπύλη στη μέση σου</li>
+              </ul>
+            </div>
+          </div>
+          <div class="exercise-card">
+            <div class="exercise-card-header">
+              <h3>Incline Dumbbell Press</h3>
+              <span class="diff-badge diff-easy">ΑΡΧΑΡΙΟΣ</span>
+            </div>
+            <div class="exercise-card-body">
+              <p><span class="muscles-badge">Άνω Θωρακικός · Ώμοι</span></p>
+              <p>Ρύθμισε το παγκάκι στις 30–45 μοίρες. Πίεσε αλτήρες από ύψος ώμου προς τα πάνω και μέσα, συναντώντας στην κορυφή χωρίς να ακουμπάνε.</p>
+              <ul class="tips-list">
+                <li>Μην ανοίγεις τους αγκώνες περισσότερο από 75 μοίρες</li>
+                <li>Έλεγξε την κατάβαση σε 2–3 δευτερόλεπτα</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ΠΛΑΤΗ -->
+      <div class="muscle-section">
+        <h2>Πλάτη</h2>
+        <div class="exercise-grid">
+          <div class="exercise-card">
+            <div class="exercise-card-header">
+              <h3>Deadlift (Άρση Νεκρού)</h3>
+              <span class="diff-badge diff-hard">ΠΡΟΧΩΡΗΜΕΝΟΣ</span>
+            </div>
+            <div class="exercise-card-body">
+              <p><span class="muscles-badge">Δικέφαλοι Μηριαίοι · Γλουτοί · Εκτείνοντες · Τραπεζοειδής</span></p>
+              <p>Η πιο ολοκληρωμένη άσκηση δύναμης. Στάσου με τη μπάρα πάνω από τη μέση του ποδιού, λυγίσε στους γοφούς και οδήγησε το πάτωμα μακριά σου για να σηκωθείς.</p>
+              <ul class="tips-list">
+                <li>Κράτα τη μπάρα σε επαφή με το σώμα σε όλη τη διαδρομή</li>
+                <li>Σφίξε δυνατά τον κορμό πριν από κάθε επανάληψη</li>
+                <li>Μην καμπυλώνεις τη μέση κάτω από φορτίο</li>
+              </ul>
+            </div>
+          </div>
+          <div class="exercise-card">
+            <div class="exercise-card-header">
+              <h3>Pull-Ups (Έλξεις)</h3>
+              <span class="diff-badge diff-medium">ΕΝΔΙΑΜΕΣΟΣ</span>
+            </div>
+            <div class="exercise-card-body">
+              <p><span class="muscles-badge">Πλατύς Ραχιαίος · Δικέφαλοι · Πίσω Δελτοειδής</span></p>
+              <p>Κρέμασε από μπάρα με λαβή προηγμένη λίγο πιο φαρδιά από το πλάτος ώμων. Τράβα το στήθος σου προς τη μπάρα, οδηγώντας με τους αγκώνες.</p>
+              <ul class="tips-list">
+                <li>Αποφύγαμε τον αιώρηση — χρησιμοποίησε αυστηρό πλήρη τροχιά κίνησης</li>
+                <li>Κατέβα αργά για μέγιστη μυϊκή ενεργοποίηση</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ΠΟΔΙΑ -->
+      <div class="muscle-section">
+        <h2>Πόδια</h2>
+        <div class="exercise-grid">
+          <div class="exercise-card">
+            <div class="exercise-card-header">
+              <h3>Squat με Μπάρα</h3>
+              <span class="diff-badge diff-hard">ΠΡΟΧΩΡΗΜΕΝΟΣ</span>
+            </div>
+            <div class="exercise-card-body">
+              <p><span class="muscles-badge">Τετρακέφαλοι · Γλουτοί · Δικέφαλοι Μηριαίοι · Κορμός</span></p>
+              <p>Το squat είναι το θεμέλιο της κάτω σωματικής δύναμης. Τοποθέτησε τη μπάρα στους πάνω τραπεζοειδείς, κατέβα τουλάχιστον παράλληλα και ανέβα μέσα από τις φτέρνες.</p>
+              <ul class="tips-list">
+                <li>Τα γόνατα να ακολουθούν τα δάχτυλα καθ' όλη τη διάρκεια</li>
+                <li>Κράτα το στήθος ψηλά και τη σπονδυλική στήλη ουδέτερη</li>
+                <li>Χρησιμοποίησε ράφι ασφαλείας όταν προπονείσαι μόνος</li>
+              </ul>
+            </div>
+          </div>
+          <div class="exercise-card">
+            <div class="exercise-card-header">
+              <h3>Romanian Deadlift</h3>
+              <span class="diff-badge diff-medium">ΕΝΔΙΑΜΕΣΟΣ</span>
+            </div>
+            <div class="exercise-card-body">
+              <p><span class="muscles-badge">Δικέφαλοι Μηριαίοι · Γλουτοί · Μέση Πλάτη</span></p>
+              <p>Κράτα τη μπάρα σε ύψος γοφών με ελαφρά λυγισμένα γόνατα. Λύγισε στους γοφούς οδηγώντας τη μπάρα κάτω κατά μήκος των ποδιών μέχρι να νιώσεις τέντωμα στους δικέφαλους μηριαίους.</p>
+              <ul class="tips-list">
+                <li>Μην καμπυλώνεις τη μέση</li>
+                <li>Κράτα τη μπάρα κοντά στο σώμα ανά πάσα στιγμή</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <p>📌 <strong style="color:#e8c547;">Πρώτα η Τεχνική:</strong> Πάντα να μαθαίνεις μια άσκηση με άδεια μπάρα ή ελαφριούς αλτήρες πριν προσθέσεις βάρος. Κανένα βάρος δεν αξίζει έναν αποτρέψιμο τραυματισμό.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 IronCore — CN4003 Web Technologies | Φοιτητική Εργασία</p>
+      <p style="margin-top:0.4rem;">Φωτογραφίες από <a href="https://unsplash.com" target="_blank">Unsplash</a> (ελεύθερη χρήση)</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IronCore — Προγράμματα Προπόνησης</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    .program-card {
+      background-color: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-top: 4px solid #e8c547;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    .program-card h3 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+    .program-meta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.2rem; }
+    .level-beginner { border-top-color: #4caf50; }
+    .level-intermediate { border-top-color: #e8c547; }
+    .level-advanced { border-top-color: #e84747; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">IRON<span>CORE</span></a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Αρχική</a></li>
+          <li><a href="workouts.html" class="active">Προπονήσεις</a></li>
+          <li><a href="nutrition.html">Διατροφή</a></li>
+          <li><a href="exercises.html">Ασκήσεις</a></li>
+          <li><a href="progress.html">Πρόοδος</a></li>
+          <li><a href="contact.html">Επικοινωνία</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>ΠΡΟΓΡΑΜΜΑΤΑ <span>ΠΡΟΠΟΝΗΣΗΣ</span></h1>
+      <p>Δομημένα πλάνα προπόνησης για κάθε επίπεδο — από την πρώτη σου συνεδρία έως την προχωρημένη περιοδοποίηση.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <img
+        src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1000&auto=format&fit=crop"
+        alt="Άτομο που εκτελεί squat με μπάρα σε γυμναστήριο"
+        class="page-img"
+      >
+      <p class="img-credit">Φωτογραφία από Anastase Maragos στο Unsplash — Ελεύθερη χρήση (Unsplash License)</p>
+
+      <p style="margin-top:2rem;">Η επιλογή του σωστού προγράμματος είναι η πιο σημαντική απόφαση που θα πάρεις ως αθλητής. Ένα καλά σχεδιασμένο πρόγραμμα παρέχει τη σωστή ποσότητα όγκου, έντασης και συχνότητας για το επίπεδό σου, εξασφαλίζοντας παράλληλα την προοδευτική υπερφόρτωση με την πάροδο του χρόνου.</p>
+
+      <div class="program-card level-beginner">
+        <h3>🟢 Αρχάριος: Full Body 3×/Εβδομάδα</h3>
+        <div class="program-meta">
+          <span class="tag">Αρχάριος</span>
+          <span class="tag">3 Ημέρες/Εβδομάδα</span>
+          <span class="tag">Ολόσωμο</span>
+          <span class="tag">~45 λεπτά</span>
+        </div>
+        <p>Τρεις ολόσωμες συνεδρίες εβδομαδιαίως επιτρέπουν στους αρχάριους να εξασκούν συχνά τα κινητικά μοτίβα και να χτίζουν γερές βάσεις πριν αυξήσουν την εξειδίκευση.</p>
+      </div>
+
+      <div class="program-card level-intermediate">
+        <h3>🟡 Ενδιάμεσος: Πάνω/Κάτω Μέρος</h3>
+        <div class="program-meta">
+          <span class="tag">Ενδιάμεσος</span>
+          <span class="tag">4 Ημέρες/Εβδομάδα</span>
+          <span class="tag">Upper/Lower</span>
+          <span class="tag">~60 λεπτά</span>
+        </div>
+        <p>Μόλις κατακτήσεις τα βασικά, το Upper/Lower split αυξάνει τον όγκο ανά μυϊκή ομάδα, εκπαιδεύοντας κάθε περιοχή δύο φορές εβδομαδιαίως.</p>
+      </div>
+
+      <div class="program-card level-advanced">
+        <h3>🔴 Προχωρημένος: Push/Pull/Legs (PPL)</h3>
+        <div class="program-meta">
+          <span class="tag">Προχωρημένος</span>
+          <span class="tag">6 Ημέρες/Εβδομάδα</span>
+          <span class="tag">PPL Split</span>
+          <span class="tag">~75 λεπτά</span>
+        </div>
+        <p>Το PPL split είναι ιδανικό για έμπειρους αθλητές που χρειάζονται υψηλό όγκο και εξειδικευμένες συνεδρίες. Κάθε μυϊκή ομάδα λαμβάνει αφιερωμένη προσοχή δύο φορές εβδομαδιαίως.</p>
+      </div>
+
+      <hr class="divider">
+
+      <!-- ΦΩΛΙΑΣΜΕΝΗ ΛΙΣΤΑ (Απαίτηση) -->
+      <h2>Ανάλυση Εβδομαδιαίου Προγράμματος</h2>
+      <p>Παρακάτω παρουσιάζεται αναλυτικά το εβδομαδιαίο πλάνο για κάθε πρόγραμμα. Κάθε ημέρα προπόνησης αναφέρεται με την κύρια εστίαση και παραδείγματα ασκήσεων:</p>
+
+      <ul class="nested-list">
+        <li>
+          <strong>🟢 Αρχάριος — Full Body (Δευ / Τετ / Παρ)</strong>
+          <ul>
+            <li>Δευτέρα: Squat, Bench Press, Barbell Row, Σανίδα</li>
+            <li>Τετάρτη: Deadlift, Overhead Press, Lat Pulldown, Κοιλιακοί</li>
+            <li>Παρασκευή: Παραλλαγή Squat, Dumbbell Press, Cable Row, Βοηθητικές</li>
+            <li>Ημέρες ανάπαυσης: Τρίτη, Πέμπτη, Σάββατο, Κυριακή</li>
+          </ul>
+        </li>
+        <li>
+          <strong>🟡 Ενδιάμεσος — Upper/Lower (Δευ / Τρι / Πεμ / Παρ)</strong>
+          <ul>
+            <li>Δευτέρα — Πάνω Α: Βαρύ Bench, Barbell Row, OHP, Δικέφαλοι/Τρικέφαλοι</li>
+            <li>Τρίτη — Κάτω Α: Εστίαση Squat, Romanian Deadlift, Leg Press, Γάμπες</li>
+            <li>Πέμπτη — Πάνω Β: Incline Press, Cable Row, Lat Pulldown, Πίσω Δελτοειδής</li>
+            <li>Παρασκευή — Κάτω Β: Εστίαση Deadlift, Leg Curl, Bulgarian Split Squat</li>
+          </ul>
+        </li>
+        <li>
+          <strong>🔴 Προχωρημένος — PPL (Δευ–Σαβ, Ανάπαυση Κυριακή)</strong>
+          <ul>
+            <li>Δευτέρα — Push: Bench Press, Incline DB, OHP, Τρικέφαλοι, Πλάγιες Ανυψώσεις</li>
+            <li>Τρίτη — Pull: Deadlift, Pull-Ups, Barbell Row, Face Pulls, Δικέφαλοι</li>
+            <li>Τετάρτη — Legs: Squat, Leg Press, RDL, Leg Curl, Γάμπες</li>
+            <li>Πέμπτη — Push (επανάληψη με παραλλαγές)</li>
+            <li>Παρασκευή — Pull (επανάληψη με παραλλαγές)</li>
+            <li>Σάββατο — Legs (επανάληψη με παραλλαγές)</li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="highlight-box">
+        <p>⚠️ <strong style="color:#e8c547;">Σημαντικό:</strong> Πάντα να ζεσταίνεσαι 5–10 λεπτά πριν σηκώσεις βάρη. Ξεκίνα με λιγότερο βάρος από αυτό που νομίζεις και αύξανε σταδιακά κάθε εβδομάδα.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 IronCore — CN4003 Web Technologies | Φοιτητική Εργασία</p>
+      <p style="margin-top:0.4rem;">Φωτογραφίες από <a href="https://unsplash.com" target="_blank">Unsplash</a> (ελεύθερη χρήση)</p>
+    </div>
+  </footer>
+
+</body>
+</html>

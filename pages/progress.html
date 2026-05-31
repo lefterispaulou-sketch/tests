@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IronCore — Παρακολούθηση Προόδου</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    .progress-steps {
+      counter-reset: steps;
+      list-style: none;
+      margin: 2rem 0;
+      padding: 0;
+    }
+    .progress-steps li {
+      counter-increment: steps;
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      align-items: flex-start;
+    }
+    .progress-steps li::before {
+      content: counter(steps);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      color: #e8c547;
+      min-width: 2.5rem;
+      line-height: 1;
+    }
+    .step-content h3 { margin-bottom: 0.3rem; }
+    .example-log {
+      background-color: #0f0f0f;
+      border: 1px solid #2a2a2a;
+      border-left: 4px solid #e8c547;
+      padding: 1.5rem;
+      font-family: monospace;
+      font-size: 0.9rem;
+      color: #cccccc;
+      margin: 1.5rem 0;
+      overflow-x: auto;
+    }
+    .example-log span { color: #e8c547; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">IRON<span>CORE</span></a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Αρχική</a></li>
+          <li><a href="workouts.html">Προπονήσεις</a></li>
+          <li><a href="nutrition.html">Διατροφή</a></li>
+          <li><a href="exercises.html">Ασκήσεις</a></li>
+          <li><a href="progress.html" class="active">Πρόοδος</a></li>
+          <li><a href="contact.html">Επικοινωνία</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>ΠΑΡΑΚΟΛΟΥΘΗΣΕ ΤΗΝ <span>ΠΡΟΟΔΟ ΣΟΥ</span></h1>
+      <p>Ό,τι μετριέται, βελτιώνεται. Μάθε πώς να καταγράφεις, να αναλύεις και να αξιοποιείς τα δεδομένα προπόνησής σου.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <img
+        src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=1000&auto=format&fit=crop"
+        alt="Άτομο που γράφει σε ημερολόγιο προπόνησης στο γυμναστήριο"
+        class="page-img"
+      >
+      <p class="img-credit">Φωτογραφία από Victor Freitas στο Unsplash — Ελεύθερη χρήση (Unsplash License)</p>
+
+      <p style="margin-top:2rem; color:#cccccc; max-width:720px;">
+        Ένα από τα πιο συχνά λάθη που κάνουν οι αθλητές είναι να προπονούνται χωρίς ημερολόγιο. Χωρίς καταγραφή, είναι αδύνατο να γνωρίζεις αν εφαρμόζεις προοδευτική υπερφόρτωση — την πιο θεμελιώδη αρχή δύναμης και μυϊκής ανάπτυξης.
+      </p>
+
+      <h2>Πώς να Καταγράφεις τις Προπονήσεις σου</h2>
+      <ol class="progress-steps">
+        <li>
+          <div class="step-content">
+            <h3>Επέλεξε Μέθοδο Καταγραφής</h3>
+            <p>Χρησιμοποίησε φυσικό σημειωματάριο, υπολογιστικό φύλλο ή εφαρμογή όπως Strong, Hevy ή Notion. Το καλύτερο εργαλείο είναι αυτό που θα χρησιμοποιείς συστηματικά.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h3>Κατέγραψε Κάθε Σετ</h3>
+            <p>Για κάθε άσκηση, σημείωσε τον αριθμό σετ, το βάρος που χρησιμοποίησες και τον αριθμό επαναλήψεων που ολοκλήρωσες. Αυτό δημιουργεί μια σαφή βάση απόδοσης.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h3>Εφάρμοσε Προοδευτική Υπερφόρτωση</h3>
+            <p>Κάθε εβδομάδα, στόχευσε να σηκώσεις λίγο περισσότερο βάρος ή να κάνεις μία επιπλέον επανάληψη σε σχέση με την προηγούμενη συνεδρία.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h3>Αξιολόγησε Εβδομαδιαίως</h3>
+            <p>Στο τέλος κάθε εβδομάδας, κοίτα πίσω στο ημερολόγιό σου. Εντόπισε ποιές ασκήσεις βελτιώθηκαν, ποιές σταμάτησαν και τι χρειάζεται να αλλάξει την επόμενη εβδομάδα.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-content">
+            <h3>Πάρε Σωματικές Μετρήσεις Μηνιαίως</h3>
+            <p>Παρακολούθα το σωματικό σου βάρος, βασικές μετρήσεις (στήθος, μέση, χέρια, πόδια) και προαιρετικά φωτογραφίες προόδου κάτω από σταθερό φωτισμό κάθε 4 εβδομάδες.</p>
+          </div>
+        </li>
+      </ol>
+
+      <hr class="divider">
+
+      <h2>Παράδειγμα Ημερολογίου Προπόνησης</h2>
+      <p>Έτσι μοιάζει ένα καλά δομημένο αρχείο συνεδρίας:</p>
+
+      <div class="example-log">
+        <span>Ημερομηνία:</span> 12/05/2026 &nbsp;|&nbsp; <span>Συνεδρία:</span> Πάνω Α<br><br>
+        <span>Bench Press</span><br>
+        &nbsp;&nbsp;Σετ 1: 80κg × 5 επαν. ✓<br>
+        &nbsp;&nbsp;Σετ 2: 80κg × 5 επαν. ✓<br>
+        &nbsp;&nbsp;Σετ 3: 80κg × 4 επαν. — <span style="color:#e84747;">1 επαν. λιγότερο</span><br><br>
+        <span>Barbell Row</span><br>
+        &nbsp;&nbsp;Σετ 1: 70κg × 6 επαν. ✓<br>
+        &nbsp;&nbsp;Σετ 2: 70κg × 6 επαν. ✓<br>
+        &nbsp;&nbsp;Σετ 3: 70κg × 6 επαν. ✓<br><br>
+        <span>Σημειώσεις:</span> Κούραση στο bench — κακός ύπνος. Ξαναδοκίμασε 80κg την επόμενη συνεδρία.
+      </div>
+
+      <hr class="divider">
+
+      <h2>Βασικές Μετρήσεις για Παρακολούθηση</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Μέτρηση</th>
+              <th>Πώς να Μετράς</th>
+              <th>Συχνότητα</th>
+              <th>Στόχος</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Σωματικό Βάρος</td>
+              <td>Ζυγαριά (πρωί, νηστικός)</td>
+              <td>Καθημερινά ή 3×/εβδομάδα</td>
+              <td>Παρακολούθηση τάσης σε εβδομάδες, όχι ημερήσιων διακυμάνσεων</td>
+            </tr>
+            <tr>
+              <td>Δύναμη στις Ασκήσεις</td>
+              <td>Ημερολόγιο (κg × επαν.)</td>
+              <td>Κάθε συνεδρία</td>
+              <td>Σταδιακή αύξηση με την πάροδο του χρόνου</td>
+            </tr>
+            <tr>
+              <td>Σωματικές Μετρήσεις</td>
+              <td>Μέτρο ράφτη</td>
+              <td>Μηνιαίως</td>
+              <td>Μέση κάτω, χέρια/στήθος πάνω για κέρδος μυών</td>
+            </tr>
+            <tr>
+              <td>Φωτογραφίες Προόδου</td>
+              <td>Κάμερα, σταθερός φωτισμός</td>
+              <td>Κάθε 4 εβδομάδες</td>
+              <td>Οπτική επιβεβαίωση αλλαγής σωματικής σύστασης</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="highlight-box">
+        <p>🎯 <strong style="color:#e8c547;">Η υπομονή είναι το κλειδί:</strong> Σημαντικά κέρδη σε μυς και δύναμη συμβαίνουν σε μήνες και χρόνια, όχι εβδομάδες. Εμπιστέψου τη διαδικασία και άφησε τα δεδομένα να καθοδηγούν τις αποφάσεις σου.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 IronCore — CN4003 Web Technologies | Φοιτητική Εργασία</p>
+      <p style="margin-top:0.4rem;">Φωτογραφίες από <a href="https://unsplash.com" target="_blank">Unsplash</a> (ελεύθερη χρήση)</p>
+    </div>
+  </footer>
+
+</body>
+</html>

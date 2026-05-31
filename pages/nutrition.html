@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IronCore — Οδηγός Διατροφής</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    .macro-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .macro-card {
+      background-color: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .macro-card .macro-icon { font-size: 2.5rem; display: block; margin-bottom: 0.8rem; }
+    .macro-card h3 { font-size: 1.4rem; }
+    .macro-grams {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.2rem;
+      color: #e8c547;
+      display: block;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">IRON<span>CORE</span></a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Αρχική</a></li>
+          <li><a href="workouts.html">Προπονήσεις</a></li>
+          <li><a href="nutrition.html" class="active">Διατροφή</a></li>
+          <li><a href="exercises.html">Ασκήσεις</a></li>
+          <li><a href="progress.html">Πρόοδος</a></li>
+          <li><a href="contact.html">Επικοινωνία</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>ΟΔΗΓΟΣ <span>ΔΙΑΤΡΟΦΗΣ</span></h1>
+      <p>Τροφοδότησε την προπόνησή σου με τις σωστές θερμίδες, μακροθρεπτικά και στρατηγικές χρονισμού γευμάτων.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <img
+        src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1000&auto=format&fit=crop"
+        alt="Υγιεινό γεύμα με κοτόπουλο, ρύζι και λαχανικά"
+        class="page-img"
+      >
+      <p class="img-credit">Φωτογραφία από Ella Olsson στο Unsplash — Ελεύθερη χρήση (Unsplash License)</p>
+
+      <p style="margin-top:2rem;">Ανεξάρτητα από το πόσο σκληρά προπονείσαι, τα αποτελέσματά σου καθορίζονται σε μεγάλο βαθμό από αυτά που τρως. Η διατροφή παρέχει τις πρώτες ύλες που χρειάζεται ο οργανισμός σου για να επισκευάσει τον μυϊκό ιστό, να αναπληρώσει τις ενεργειακές αποθήκες και να γίνει πιο δυνατός.</p>
+
+      <h2>Τα Τρία Μακροθρεπτικά Συστατικά</h2>
+      <div class="macro-grid">
+        <div class="macro-card">
+          <span class="macro-icon">🥩</span>
+          <h3>Πρωτεΐνη</h3>
+          <span class="macro-grams">1,6–2,2γρ</span>
+          <p style="font-size:0.85rem; color:#888;">ανά κιλό σωματικού βάρους ημερησίως</p>
+          <p>Απαραίτητη για την επισκευή και ανάπτυξη μυών. Κοτόπουλο, ψάρι, αυγά, γαλακτοκομικά, όσπρια.</p>
+        </div>
+        <div class="macro-card">
+          <span class="macro-icon">🍚</span>
+          <h3>Υδατάνθρακες</h3>
+          <span class="macro-grams">3–5γρ</span>
+          <p style="font-size:0.85rem; color:#888;">ανά κιλό σωματικού βάρους ημερησίως</p>
+          <p>Κύριο καύσιμο για υψηλής έντασης προπόνηση. Ρύζι, βρόμη, πατάτες, φρούτα.</p>
+        </div>
+        <div class="macro-card">
+          <span class="macro-icon">🥑</span>
+          <h3>Λίπη</h3>
+          <span class="macro-grams">0,8–1,2γρ</span>
+          <p style="font-size:0.85rem; color:#888;">ανά κιλό σωματικού βάρους ημερησίως</p>
+          <p>Ζωτικά για την παραγωγή ορμονών και υγεία αρθρώσεων. Ελαιόλαδο, ξηροί καρποί, αβοκάντο.</p>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <!-- ΠΙΝΑΚΑΣ (Απαίτηση: 4+ στήλες, 4+ γραμμές) -->
+      <h2>Τρόφιμα Υψηλής Πρωτεΐνης</h2>
+      <p>Χρησιμοποίησε αυτόν τον πίνακα αναφοράς για να σχεδιάσεις γεύματα και να επιτύχεις τους ημερήσιους στόχους πρωτεΐνης:</p>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Τρόφιμο</th>
+              <th>Μερίδα</th>
+              <th>Πρωτεΐνη (γρ)</th>
+              <th>Θερμίδες</th>
+              <th>Λίπος (γρ)</th>
+              <th>Ιδανικό για</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Στήθος Κοτόπουλου (ψητό)</td>
+              <td>150γρ</td>
+              <td>46</td>
+              <td>248</td>
+              <td>5</td>
+              <td>Lean bulking / cutting</td>
+            </tr>
+            <tr>
+              <td>Ολόκληρα Αυγά</td>
+              <td>2 μεγάλα αυγά</td>
+              <td>13</td>
+              <td>156</td>
+              <td>11</td>
+              <td>Πρωινό μετά προπόνηση</td>
+            </tr>
+            <tr>
+              <td>Ελληνικό Γιαούρτι (0%)</td>
+              <td>200γρ</td>
+              <td>20</td>
+              <td>106</td>
+              <td>0,5</td>
+              <td>Σνακ / πρωτεΐνη πριν ύπνο</td>
+            </tr>
+            <tr>
+              <td>Κονσέρβα Τόνου (σε νερό)</td>
+              <td>1 κονσέρβα (185γρ)</td>
+              <td>42</td>
+              <td>191</td>
+              <td>2</td>
+              <td>Οικονομική άπαχη πρωτεΐνη</td>
+            </tr>
+            <tr>
+              <td>Πρωτεΐνη Ορού Γάλακτος</td>
+              <td>1 μέτρο (30γρ)</td>
+              <td>24</td>
+              <td>120</td>
+              <td>2</td>
+              <td>Shake μετά προπόνηση</td>
+            </tr>
+            <tr>
+              <td>Φιλέτο Σολομού</td>
+              <td>150γρ</td>
+              <td>35</td>
+              <td>280</td>
+              <td>14</td>
+              <td>Ωμέγα-3 + πρωτεΐνη</td>
+            </tr>
+            <tr>
+              <td>Φακές (μαγειρεμένες)</td>
+              <td>200γρ</td>
+              <td>18</td>
+              <td>230</td>
+              <td>0,8</td>
+              <td>Φυτική επιλογή</td>
+            </tr>
+            <tr>
+              <td>Cottage Cheese</td>
+              <td>200γρ</td>
+              <td>24</td>
+              <td>180</td>
+              <td>5</td>
+              <td>Καζεΐνη πριν ύπνο</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr class="divider">
+
+      <h2>Στόχοι Θερμίδων ανά Σκοπό</h2>
+      <p>Η συνολική ημερήσια ενεργειακή σου δαπάνη (TDEE) είναι το σημείο εκκίνησης. Ρύθμισε από εκεί βάσει του στόχου σου:</p>
+      <ul>
+        <li><strong style="color:#e8c547;">Κέρδος Μυϊκής Μάζας (Bulk):</strong> Φάε 250–500 θερμίδες πάνω από το TDEE</li>
+        <li><strong style="color:#e8c547;">Απώλεια Λίπους (Cut):</strong> Φάε 300–500 θερμίδες κάτω από το TDEE</li>
+        <li><strong style="color:#e8c547;">Σωματική Αναδόμηση:</strong> Φάε στο TDEE με υψηλή πρόσληψη πρωτεΐνης</li>
+      </ul>
+
+      <div class="highlight-box">
+        <p>💧 <strong style="color:#e8c547;">Ενυδάτωση:</strong> Πίνε τουλάχιστον 2–3 λίτρα νερό ημερησίως. Η αφυδάτωση μειώνει τη δύναμη έως 10% και επιβαρύνει σημαντικά την αποκατάσταση.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 IronCore — CN4003 Web Technologies | Φοιτητική Εργασία</p>
+      <p style="margin-top:0.4rem;">Φωτογραφίες από <a href="https://unsplash.com" target="_blank">Unsplash</a> (ελεύθερη χρήση)</p>
+    </div>
+  </footer>
+
+</body>
+</html>

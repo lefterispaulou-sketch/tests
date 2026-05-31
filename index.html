@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IronCore — Ο Πλήρης Οδηγός Γυμναστικής &amp; Άρσης Βαρών</title>
+
+  <!-- Εξωτερικό CSS (Απαίτηση: External CSS) -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Εσωτερικό CSS (Απαίτηση: Internal CSS) -->
+  <style>
+    .features-section { background-color: #111111; }
+    .home-intro { padding: 4rem 0 2rem; }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .why-item {
+      padding: 1.5rem;
+      background-color: #1a1a1a;
+      border: 1px solid #2a2a2a;
+    }
+    .why-item h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+
+  <!-- ΚΕΦΑΛΙΔΑ -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">IRON<span>CORE</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Αρχική</a></li>
+          <li><a href="pages/workouts.html">Προπονήσεις</a></li>
+          <li><a href="pages/nutrition.html">Διατροφή</a></li>
+          <li><a href="pages/exercises.html">Ασκήσεις</a></li>
+          <li><a href="pages/progress.html">Πρόοδος</a></li>
+          <li><a href="pages/contact.html">Επικοινωνία</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-badge">🏋️ Προπονήσου Έξυπνα. Σήκωσε Βαρύτερα.</span>
+      <h1>ΧΤΙΣΕ ΤΟ<br><span>ΣΙΔΕΡΕΝΙΟ</span> ΣΩΜΑ ΣΟΥ</h1>
+      <p class="hero-sub">Ο πλήρης οδηγός για προπόνηση γυμναστικής, διατροφή και προοδευτική υπερφόρτωση — για αρχάριους και προχωρημένους.</p>
+      <a href="pages/workouts.html" class="btn btn-primary">Ξεκίνα Τώρα</a>
+      <a href="pages/exercises.html" class="btn btn-outline">Βιβλιοθήκη Ασκήσεων</a>
+    </div>
+  </section>
+
+  <!-- ΣΤΑΤΙΣΤΙΚΑ -->
+  <div class="container">
+    <div class="stat-strip">
+      <div class="stat-item">
+        <span class="stat-number">6</span>
+        <span class="stat-label">Σελίδες</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">30+</span>
+        <span class="stat-label">Ασκήσεις</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">3</span>
+        <span class="stat-label">Προγράμματα</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Δωρεάν</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ΕΙΣΑΓΩΓΗ -->
+  <section class="home-intro">
+    <div class="container">
+      <img
+        src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=1000&auto=format&fit=crop"
+        alt="Αθλητής σηκώνει βαριά μπάρα σε σκοτεινό γυμναστήριο"
+        class="page-img"
+      >
+      <p class="img-credit">Φωτογραφία από Humphrey Muleba στο Unsplash — Ελεύθερη χρήση (Unsplash License)</p>
+
+      <h2>Καλωσήρθες στο IronCore</h2>
+      <p>Είτε σηκώνεις μπάρα για πρώτη φορά είτε κυνηγάς νέο προσωπικό ρεκόρ, το IronCore σου δίνει τις γνώσεις, τη δομή και τα εργαλεία για να κάνεις πραγματική πρόοδο στο γυμναστήριο.</p>
+      <p>Ο ιστότοπος καλύπτει τα πάντα: από προγράμματα προπόνησης για αρχάριους και διατροφή βάσει μακροθρεπτικών συστατικών, έως αναλύσεις ασκήσεων και στρατηγικές παρακολούθησης προόδου. Εξερεύνησε τις ενότητες και ξεκίνα να χτίζεις την καλύτερη εκδοχή του εαυτού σου.</p>
+      <div class="highlight-box">
+        <p>💡 <strong style="color: #e8c547;">Συμβουλή:</strong> Η συνέπεια νικά την ένταση. Πήγαινε τακτικά, κατέγραψε τις επαναλήψεις σου και τα αποτελέσματα θα έρθουν.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ΧΑΡΑΚΤΗΡΙΣΤΙΚΑ -->
+  <section class="section features-section">
+    <div class="container">
+      <h2>Τι Θα Βρεις Εδώ</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <span class="card-icon">📋</span>
+          <h3>Προγράμματα Προπόνησης</h3>
+          <p>Δομημένα προγράμματα για αρχάριους, ενδιάμεσους και προχωρημένους με σαφή εβδομαδιαία πλάνα.</p>
+          <a href="pages/workouts.html">Δες τα Προγράμματα →</a>
+        </div>
+        <div class="card">
+          <span class="card-icon">🥗</span>
+          <h3>Οδηγός Διατροφής</h3>
+          <p>Μάθε να υπολογίζεις θερμίδες, να θέτεις στόχους μακροθρεπτικών και να χρονολογείς τα γεύματά σου.</p>
+          <a href="pages/nutrition.html">Μάθε για τη Διατροφή →</a>
+        </div>
+        <div class="card">
+          <span class="card-icon">💪</span>
+          <h3>Βιβλιοθήκη Ασκήσεων</h3>
+          <p>Αναλυτικές περιγραφές των πιο αποτελεσματικών ασκήσεων με οδηγίες σωστής τεχνικής.</p>
+          <a href="pages/exercises.html">Δες τις Ασκήσεις →</a>
+        </div>
+        <div class="card">
+          <span class="card-icon">📈</span>
+          <h3>Παρακολούθηση Προόδου</h3>
+          <p>Στρατηγικές και πρότυπα για να καταγράφεις τις προπονήσεις σου και να μετράς την πρόοδό σου.</p>
+          <a href="pages/progress.html">Παρακολούθησε την Πρόοδό σου →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ΓΙΑΤΙ ΑΡΣΗ ΒΑΡΩΝ -->
+  <section class="section">
+    <div class="container">
+      <h2>Γιατί Άρση Βαρών;</h2>
+      <p>Η προπόνηση αντίστασης είναι μία από τις πιο τεκμηριωμένες μορφές άσκησης για τη συνολική υγεία, τη σύσταση σώματος και την ψυχική ευεξία. Να γιατί εκατομμύρια άνθρωποι προπονούνται με βάρη:</p>
+      <div class="why-grid">
+        <div class="why-item">
+          <h3>🔥 Καίει Λίπος</h3>
+          <p>Ο μυϊκός ιστός αυξάνει τον βασικό μεταβολικό ρυθμό, βοηθώντας σε καύση θερμίδων ακόμα και σε ηρεμία.</p>
+        </div>
+        <div class="why-item">
+          <h3>🦴 Ενισχύει τα Οστά</h3>
+          <p>Η προοδευτική φόρτιση διεγείρει την οστική ανάπτυξη, μειώνοντας τον κίνδυνο οστεοπόρωσης.</p>
+        </div>
+        <div class="why-item">
+          <h3>🧠 Βελτιώνει τη Διάθεση</h3>
+          <p>Η προπόνηση αντίστασης απελευθερώνει ενδορφίνες και έχει αποδειχθεί ότι μειώνει άγχος και κατάθλιψη.</p>
+        </div>
+        <div class="why-item">
+          <h3>⚡ Βελτιώνει την Απόδοση</h3>
+          <p>Οι δυνατοί μύες μεταφράζονται άμεσα σε καλύτερη απόδοση σε αθλήματα και καθημερινές δραστηριότητες.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ΥΠΟΣΕΛΙΔΟ -->
+  <footer>
+    <div class="container">
+      <p>© 2026 IronCore — CN4003 Web Technologies | Φοιτητική Εργασία</p>
+      <p style="margin-top:0.4rem;">Φωτογραφίες από <a href="https://unsplash.com" target="_blank">Unsplash</a> (ελεύθερη χρήση) &amp; <a href="https://www.pexels.com" target="_blank">Pexels</a> (ελεύθερη χρήση)</p>
+    </div>
+  </footer>
+
+</body>
+</html>
